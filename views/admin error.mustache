@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#alert{
+    opacity:0.5;
+    margin-left:30%;
+    width:40em;
+    height:40em;
+   
+}
+#h1forkey{
+    margin-top: 22%;
+    margin-left:36%;
+    position:absolute;
+      animation: mymove 3s infinite;
+}
+#try{
+    position:absolute;
+    margin-top:42%;
+    text-decoration:none;
+    margin-left:47.5%;
+    animation: mymove 3s infinite;
+    color:black;
+}
+
+@keyframes mymove{
+    50%{text-shadow: 2.5px 5px 7.5px blue;}
+}
+</style>
+</head>
+<body>
+<h1 id="h1forkey">You have entered the wrong key</h1>
+<a href="/admin"><h2 id="try">Try again</h2></a>
+<img src="alert.png" id="alert">
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <style>
+       #forh1{
+         margin-top:3%;
+         animation: mymove 3s infinite;
+     }
+     table{
+        margin-top:4%; 
+     }
+      @keyframes mymove{
+    50%{text-shadow: 2.5px 5px 7.5px blue;}
+}
+body{
+      background-image: url(rateus.png) ;
+      background-repeat: no-repeat;
+      background-size:cover;
+     }
+     #forrate{
+         margin-top:8%;
+     }
+     #overall{
+            margin-left:77%;
+             margin-top:-4%;
+     }
+     .container111{
+    background-color:black;
+    color:white;
+    margin-top: 50%;
+    height: 10%;
+    display: flex;
+}
+.skill2{
+    margin-top: 0.8%;
+    font-size: 2em;
+    margin-left: 5%;
+}
+.skill1{
+    margin-top: 0.8%;
+    font-size: 2em;
+    
+}
+.skill3{
+    margin-top: 0.8%;
+    font-size: 2em;
+    margin-left: 7%;
+    
+}
+.skill4{
+    margin-top: 0.6%;
+    
+    margin-left: 53%;
+}
+      </style>  
+    </head>
+    <body>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <h1 id="forh1">Ratings and reviews</h1></div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+    <table class="table table-striped">
+    <thead class="thead-dark"><!--This is for multiple headings-->
+    <tr>
+        <th scope="col">Email</th><!--This for headings-->
+        <th scope="col">Rating</th>
+        <th scope="col">Comment</th>
+        
+        
+        
+        
+        </tr>
+        </thead>
+         {{#n1}}
+        <tr>
+        
+        <td>{{email }}</td>
+        <td>{{  rating }}</td>
+        <td>{{ comment }}</td>
+    <!--Now we going to implement delete functionality-->
+    
+    {{/n1}}
+
+    </table>
+    {{#n2}}
+    <h3 id="forrate">Total number ratings : {{count}}</h3>
+    {{/n2}}
+    {{#n3}}
+    <h3 id="overall">Overall rating  : {{avg}}</h3>
+    {{/n3}}
+    </div>
+    </div>
+    </div>
+    <div class="container111">
+    <div class="skill1"><a href="/book-online">Contact Us</a></div>
+    <div class="skill2"><a href="/About-us">About Us</a></div>
+    <div class="skill3"><a href="/book-online">Book Online</a></div>
+    <div class="skill4"><a href="/"><img src="\home.gif"></a></div>
+</div>
+    </body>
+</html>

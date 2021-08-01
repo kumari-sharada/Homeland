@@ -1,0 +1,6 @@
+create table ratings(email text references bookonline(email) on delete cascade on update cascade,rating int,comment text);
+
+
+create table appointments(email text,date_time text);
+
+create table admin(adminid serial primary key,name text,email text);

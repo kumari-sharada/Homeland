@@ -1,0 +1,4 @@
+My PostgreSQL database table
+
+create table bookonline(customerid serial primary key,name text,email text,phone_number text,kitchenid text,bedroomid text,livingroomid text,kidsroomid text);
+

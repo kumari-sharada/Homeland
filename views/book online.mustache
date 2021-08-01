@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="\style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Book Online</title>
+        
+    </head>
+    <body>
+        <img id="imgforbook" src="bookonline.jpg">
+            <h1 id="hforonline">Talk to our designer</h1>
+            <h1 id="hforbooking">Let's design your dream home from comfort of your home.</h1>
+            <div class="row">
+                <div class="col-md-3" id="forbooking">
+                    <form action="/thanks/add" method="post" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                            <div class="invalid-feedback">Please fill out this field.It must be of the form abc@example.com</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone_number" class="form-control" id="id1" placeholder="Enter your Phone number(without +91 or 0)" pattern="[0-9]{10}" required>
+                            <div class="invalid-feedback">Please fill out this field.It must contain  ten digits.</div>
+                        </div>
+                        <div class="form-group">
+                           <label>Kitchen ID</label>
+                           <input type="text" name="kitchenid" class="form-control" id="id2" placeholder="Enter Kitchen ID(Optional)" pattern="[0-9]{3}">
+                           <div class="invalid-feedback">It must contain  three digits.</div>
+                       </div>
+                       <div class="form-group">
+                        <label>Bedroom ID</label>
+                        <input type="text" name="bedroomid" class="form-control" id="id3" placeholder="Enter Bedroom ID(Optional)" pattern="[0-9]{3}">
+                        <div class="invalid-feedback">It must contain  three digits.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Living room ID</label>
+                        <input type="text" name="livingroomid" class="form-control" id="id4" placeholder="Enter Living room ID(Optional)" pattern="[0-9]{3}">
+                        <div class="invalid-feedback">It must contain  three digits.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Kid's room ID</label>
+                        <input type="text" name="kidsroomid" class="form-control" id="id5" placeholder="Enter Kid's room ID(Optional)" pattern="[0-9]{3}">
+                        <div class="invalid-feedback">It must contain three digits.</div>
+                    </div>
+                       <button type="submit" class="btn btn-primary">BOOK ONLINE CONSULTATION</button>
+                       </form>
+                       <script>
+                       (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                          var forms = document.getElementsByClassName('needs-validation');
+                          var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                              if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                              }
+                              form.classList.add('was-validated');
+                            }, false);
+                          });
+                        }, false);
+                      })();
+                      </script>
+                       </div>
+                       </div>
+                       <h1 id="hforcontactus2">For More Queries Contact Us</h1>
+                       <p id="pforcontactus">With you, every step of the way!</p>
+                       <div class="my-container">
+                           <div class="customersupport">
+                               <h1>Customer Support</h1>
+                            <p id="pformail">Mail</p>
+                            <p>care@homeland.com</p>
+                            <p id="pforcall">Call</p>
+                            <p>10 AM to 7 PM (all days of the week)</p>
+                            <p>+91 9148 484 666</p>
+                            <p id="pfordesigners">For Designers</p>
+                            <p id="p2fordesigners">Are you a designer?</p>
+                            <p>designers@homeland.com</p>
+                            <p id="pfordesigners">For Careers</p>
+                            <p id="p2fordesigners">Career opportunities</p>
+                            <p>careers@homeland.com</p>
+                            <p id="pfordesigners">For General Info</p>
+                            <p id="p2fordesigners">General queries & partnerships</p>
+                            <p>info@homeland.com</p>
+                            <p id="pfordesigners">Press Opportunities</p>
+                            <p id="p2fordesigners">Media Queries</p>
+                            <p>press@homeland.com</p>
+                           </div>
+                           <div class="foroffices">
+                               <h1 id="hforoffice">Our Offices</h1>
+                               <p id="pformail">India</p>
+                               <p>Homeland, 3rd Floor, Aurbis Business Parks Pvt Ltd, Survey No. 58, 7, Outer Ring Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103</p>
+                               <p id="pformail">Singapore</p>
+                               <p>#06-00, 15 Beach Rd, WeWork Beach Centre, Singapore 189677</p>
+                              <a id="forrating" href="/rating" ><p id="pformail">Our Ratings and Reviews</p></a>
+                              <a id="forrating" href="/Appointment-list" > <p id="pformail">Appointments</p>
+                               <p></p>
+                           </div>    
+                       </div>
+                       <div class="containerforbookonline">
+                        <div class="skill1"><a href="/book-online">Contact Us</a></div>
+                        <div class="skill2"><a href="/About-us">About Us</a></div>
+                        <div class="skill3"><a href="/book-online">Book Online</a></div>
+                        <div class="skill4"><a href="/"><img src="/home.gif"></a></div>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+#alert{
+    opacity:0.5;
+    margin-left:30%;
+    width:40em;
+    height:40em;
+    position:absolute;
+   
+}
+#h1forkey{
+    margin-top: 22%;
+    margin-left:42%;
+    position:absolute;
+      animation: mymove 3s infinite;
+}
+#try{
+    position:absolute;
+    margin-top:42%;
+    text-decoration:none;
+    margin-left:42%;
+    animation: mymove 3s infinite;
+    color:black;
+}
+
+@keyframes mymove{
+    50%{text-shadow: 2.5px 5px 7.5px blue;}
+}
+</style>
+</head>
+<body>
+<h1 id="h1forkey">Email already in use</h1>
+<a href="/register"><h2 id="try">Register again with new email</h2></a>
+<img src="alert.png" id="alert">
+
+</body>
+</html>
