@@ -4,7 +4,7 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var flash = require('connect-flash');
 const app = express();
-const nodemailer = require('nodemailer');
+
 const mustache = mustacheexpress();
 const bodyParser = require('body-parser');
 const  {Client,Pool} = require('pg');
