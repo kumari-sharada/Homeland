@@ -1,6 +1,11 @@
+create table admin(adminid serial primary key,name text,email text);
+
+create table register(cid serial primary key,full_name text,email text unique,password text);
+
+create table bookonline(customerid serial primary key,name text,email text unique,phone_number text,kitchenid text,bedroomid text,livingroomid text,kidsroomid text);
+
 create table ratings(email text references bookonline(email) on delete cascade on update cascade,rating int,comment text);
 
+create table appointments(email text references bookonline(email) on delete cascade on update cascade,date_time text);
 
-create table appointments(email text,date_time text);
-
-create table admin(adminid serial primary key,name text,email text);
+create table admin_security(sid serial primary key,security_key text);
